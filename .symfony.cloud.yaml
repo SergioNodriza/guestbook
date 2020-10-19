@@ -4,26 +4,19 @@ type: php:7.4
 
 runtime:
     extensions:
+        - pdo_pgsql
         - apcu
         - mbstring
         - sodium
         - ctype
         - iconv
-        - pdo_pgsql
 
-
-#variables:
-#    php:
-#        # uncomment on PHP 7.4+
-#        #opcache.preload: /app/config/preload.php
 
 build:
     flavor: none
 
 relationships:
     database: "db:postgresql"
-
-disk: 512
 
 web:
     locations:
@@ -32,7 +25,7 @@ web:
             expires: 1h
             passthru: "/index.php"
 
-
+disk: 512
 
 mounts:
     "/var": { source: local, source_path: var }
@@ -42,7 +35,7 @@ hooks:
         set -x -e
 
         curl -s https://get.symfony.com/cloud/configurator | (>&2 bash)
-        
+
         (>&2 symfony-build)
 
     deploy: |
