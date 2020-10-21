@@ -11,15 +11,16 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:sessions-in-redis" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a33f331-7270-4ebf-885a-13f1162d9a3a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201020063359.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20201020063359.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ConferenceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ConferenceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,9 +133,14 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/migrations" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/migrations" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -163,7 +169,7 @@
       <workItem from="1603090217040" duration="11503000" />
       <workItem from="1603173413079" duration="14481000" />
       <workItem from="1603187905352" duration="163000" />
-      <workItem from="1603259646801" duration="4546000" />
+      <workItem from="1603259646801" duration="7666000" />
     </task>
     <servers />
   </component>
@@ -181,7 +187,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="sessions-in-redis" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -199,6 +205,10 @@
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
     <state x="625" y="221" width="732" height="644" key="#Inspections/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603098341238" />
+    <state x="246" y="386" width="1490" height="315" key="#SQL_Dialects" timestamp="1603265646454">
+      <screen x="72" y="0" width="1848" height="1080" />
+    </state>
+    <state x="246" y="386" width="1490" height="315" key="#SQL_Dialects/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603265646454" />
     <state x="506" y="140" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603263874051">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
