@@ -17,8 +17,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a33f331-7270-4ebf-885a-13f1162d9a3a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/migrations/data.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EntityListener/ConferenceEntityListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cc4e192d-0954-4645-8eec-b09bf0731a48.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cc4e192d-0954-4645-8eec-b09bf0731a48.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/guestbook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/guestbook.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ConferenceRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ConferenceRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201020063359.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20201020063359.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ConferenceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ConferenceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Conference.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Conference.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/conference/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conference/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/conference/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conference/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +136,8 @@
       <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
       <path value="$PROJECT_DIR$/vendor/twig/extra-bundle" />
       <path value="$PROJECT_DIR$/vendor/twig/intl-extra" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
     </include_path>
   </component>
   <component name="ProjectId" id="1j5LYoqxdxUysEraTKQydbTJ6CS" />
@@ -131,7 +149,7 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/migrations" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -167,7 +185,7 @@
       <workItem from="1603090217040" duration="11503000" />
       <workItem from="1603173413079" duration="14481000" />
       <workItem from="1603187905352" duration="163000" />
-      <workItem from="1603259646801" duration="8003000" />
+      <workItem from="1603259646801" duration="14293000" />
     </task>
     <servers />
   </component>
@@ -203,10 +221,10 @@
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
     <state x="625" y="221" width="732" height="644" key="#Inspections/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603098341238" />
-    <state x="246" y="386" width="1490" height="315" key="#SQL_Dialects" timestamp="1603265646454">
+    <state x="246" y="386" width="1490" height="315" key="#SQL_Dialects" timestamp="1603272202736">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
-    <state x="246" y="386" width="1490" height="315" key="#SQL_Dialects/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603265646454" />
+    <state x="246" y="386" width="1490" height="315" key="#SQL_Dialects/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603272202736" />
     <state x="506" y="140" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603263874051">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
@@ -215,17 +233,25 @@
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
     <state x="579" y="81" width="814" height="932" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603267374743" />
-    <state x="779" y="298" width="416" height="498" key="FileChooserDialogImpl" timestamp="1603187587808">
+    <state x="779" y="298" width="416" height="498" key="FileChooserDialogImpl" timestamp="1603269227652">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
-    <state x="779" y="298" width="416" height="498" key="FileChooserDialogImpl/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603187587808" />
+    <state x="779" y="298" width="416" height="498" key="FileChooserDialogImpl/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603269227652" />
+    <state x="708" y="239" width="566" height="608" key="NewPhpClassDialog" timestamp="1603273073979">
+      <screen x="72" y="0" width="1848" height="1080" />
+    </state>
+    <state x="708" y="239" width="566" height="608" key="NewPhpClassDialog/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603273073979" />
     <state x="768" y="453" width="446" height="181" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603099484670">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
     <state x="768" y="453" width="446" height="181" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603099484670" />
-    <state x="659" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1603098591561">
+    <state x="675" y="106" width="799" height="867" key="find.popup" timestamp="1603269234055">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
-    <state x="659" y="239" width="672" height="678" key="search.everywhere.popup/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603098591561" />
+    <state x="675" y="106" width="799" height="867" key="find.popup/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603269234055" />
+    <state x="659" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1603273215677">
+      <screen x="72" y="0" width="1848" height="1080" />
+    </state>
+    <state x="659" y="239" width="672" height="678" key="search.everywhere.popup/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603273215677" />
   </component>
 </project>

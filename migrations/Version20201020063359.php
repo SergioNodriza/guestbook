@@ -26,13 +26,6 @@ final class Version20201020063359 extends AbstractMigration
         $this->addSql('CREATE INDEX IDX_9474526C604B8382 ON comment (conference_id)');
         $this->addSql('CREATE TABLE conference (id INT NOT NULL, city VARCHAR(255) NOT NULL, year VARCHAR(4) NOT NULL, is_international BOOLEAN NOT NULL, PRIMARY KEY(id))');
         $this->addSql('ALTER TABLE comment ADD CONSTRAINT FK_9474526C604B8382 FOREIGN KEY (conference_id) REFERENCES conference (id) NOT DEFERRABLE INITIALLY IMMEDIATE');
-        $this->addSql('INSERT INTO comment (conference_id, author, text, email, created_at, photo_filename) VALUES (1, Fabien, texto fabien, fabien@some.where, 2019-12-06 10:49:00, lisbon.jpg)');
-        $this->addSql('INSERT INTO comment (conference_id, author, text, email, created_at, photo_filename) VALUES (1, Thomas, texto thomas, thomas@some.where, 2019-12-06 10:49:00, lisbon.jpg)');
-        $this->addSql('INSERT INTO comment (conference_id, author, text, email, created_at, photo_filename) VALUES (1, Helene, texto heleen, helene@some.where, 2019-12-06 10:49:00, lisbon.jpg)');
-        $this->addSql('INSERT INTO comment (conference_id, author, text, email, created_at, photo_filename) VALUES (1, Lucas, texto lucas, lucas@some.where, 2019-12-06 10:49:00, lisbon.jpg)');
-        $this->addSql('INSERT INTO conference (city, year, is_international) VALUES (Amsterdam, 2019, true)');
-        $this->addSql('INSERT INTO conference (city, year, is_international) VALUES (Paris, 2020, false)');
-
     }
 
     public function down(Schema $schema) : void
