@@ -18,9 +18,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9a33f331-7270-4ebf-885a-13f1162d9a3a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201020063359.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20201020063359.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ConferenceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ConferenceController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ConferenceRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ConferenceRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +167,7 @@
       <workItem from="1603090217040" duration="11503000" />
       <workItem from="1603173413079" duration="14481000" />
       <workItem from="1603187905352" duration="163000" />
-      <workItem from="1603259646801" duration="7666000" />
+      <workItem from="1603259646801" duration="8003000" />
     </task>
     <servers />
   </component>
@@ -213,6 +211,10 @@
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
     <state x="506" y="140" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603263874051" />
+    <state x="579" y="81" width="814" height="932" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603267374743">
+      <screen x="72" y="0" width="1848" height="1080" />
+    </state>
+    <state x="579" y="81" width="814" height="932" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603267374743" />
     <state x="779" y="298" width="416" height="498" key="FileChooserDialogImpl" timestamp="1603187587808">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
