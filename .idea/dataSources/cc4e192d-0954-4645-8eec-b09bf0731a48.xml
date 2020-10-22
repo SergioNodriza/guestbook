@@ -786,12 +786,12 @@ false Z
 false Zulu
 true posixrules
 </TimeZones>
-      <StartupTime>1603263666</StartupTime>
+      <StartupTime>1603347186</StartupTime>
     </root>
     <database id="2" parent="1" name="main">
       <ObjectId>16384</ObjectId>
       <Owner>main</Owner>
-      <IntrospectionStateNumber>574</IntrospectionStateNumber>
+      <IntrospectionStateNumber>599</IntrospectionStateNumber>
       <Current>1</Current>
     </database>
     <database id="3" parent="1" name="postgres">
@@ -848,7 +848,7 @@ true posixrules
       <Comment>standard public schema</Comment>
       <StateNumber>360</StateNumber>
       <Owner>main</Owner>
-      <IntrospectionStateNumber>575</IntrospectionStateNumber>
+      <IntrospectionStateNumber>600</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="16" parent="2" name="btree">
@@ -911,103 +911,161 @@ true posixrules
     <language id="24" parent="2" name="internal"/>
     <language id="25" parent="2" name="plpgsql"/>
     <language id="26" parent="2" name="sql"/>
-    <sequence id="27" parent="15" name="comment_id_seq">
+    <sequence id="27" parent="15" name="admin_id_seq">
+      <ObjectId>16422</ObjectId>
+      <Owner>main</Owner>
+      <StateNumber>598</StateNumber>
+      <DataType>bigint|0s</DataType>
+    </sequence>
+    <sequence id="28" parent="15" name="comment_id_seq">
       <ObjectId>16391</ObjectId>
       <Owner>main</Owner>
       <StateNumber>571</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <sequence id="28" parent="15" name="conference_id_seq">
+    <sequence id="29" parent="15" name="conference_id_seq">
       <ObjectId>16393</ObjectId>
       <Owner>main</Owner>
       <StateNumber>571</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <table id="29" parent="15" name="comment">
+    <table id="30" parent="15" name="admin">
+      <ObjectId>16424</ObjectId>
+      <Owner>main</Owner>
+      <StateNumber>598</StateNumber>
+    </table>
+    <table id="31" parent="15" name="comment">
       <ObjectId>16395</ObjectId>
       <Owner>main</Owner>
       <StateNumber>571</StateNumber>
     </table>
-    <table id="30" parent="15" name="conference">
+    <table id="32" parent="15" name="conference">
       <ObjectId>16405</ObjectId>
-      <Outdated>1</Outdated>
       <Owner>main</Owner>
-      <StateNumber>571</StateNumber>
+      <StateNumber>585</StateNumber>
     </table>
-    <table id="31" parent="15" name="doctrine_migration_versions">
+    <table id="33" parent="15" name="doctrine_migration_versions">
       <ObjectId>16385</ObjectId>
       <Owner>main</Owner>
       <StateNumber>570</StateNumber>
     </table>
-    <column id="32" parent="29" name="id">
+    <column id="34" parent="30" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>598</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="35" parent="30" name="username">
+      <Position>2</Position>
+      <DataType>varchar(180)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>598</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="36" parent="30" name="roles">
+      <Position>3</Position>
+      <DataType>json|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>598</StateNumber>
+      <TypeId>114</TypeId>
+    </column>
+    <column id="37" parent="30" name="password">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>598</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="38" parent="30" name="admin_pkey">
+      <ObjectId>16430</ObjectId>
+      <StateNumber>598</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <index id="39" parent="30" name="uniq_880e0d76f85e0677">
+      <ObjectId>16432</ObjectId>
+      <StateNumber>598</StateNumber>
+      <ColNames>username</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="40" parent="30" name="admin_pkey">
+      <ObjectId>16431</ObjectId>
+      <StateNumber>598</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>admin_pkey</UnderlyingIndexName>
+    </key>
+    <column id="41" parent="31" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="33" parent="29" name="conference_id">
+    <column id="42" parent="31" name="conference_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="34" parent="29" name="author">
+    <column id="43" parent="31" name="author">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="35" parent="29" name="text">
+    <column id="44" parent="31" name="text">
       <Position>4</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="36" parent="29" name="email">
+    <column id="45" parent="31" name="email">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="37" parent="29" name="created_at">
+    <column id="46" parent="31" name="created_at">
       <Position>6</Position>
       <DataType>timestamp(0)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="38" parent="29" name="photo_filename">
+    <column id="47" parent="31" name="photo_filename">
       <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
       <StateNumber>571</StateNumber>
       <DefaultExpression>NULL::character varying</DefaultExpression>
       <TypeId>1043</TypeId>
     </column>
-    <index id="39" parent="29" name="comment_pkey">
+    <index id="48" parent="31" name="comment_pkey">
       <ObjectId>16402</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <index id="40" parent="29" name="idx_9474526c604b8382">
+    <index id="49" parent="31" name="idx_9474526c604b8382">
       <ObjectId>16404</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>conference_id</ColNames>
     </index>
-    <key id="41" parent="29" name="comment_pkey">
+    <key id="50" parent="31" name="comment_pkey">
       <ObjectId>16403</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>comment_pkey</UnderlyingIndexName>
     </key>
-    <foreign-key id="42" parent="29" name="fk_9474526c604b8382">
+    <foreign-key id="51" parent="31" name="fk_9474526c604b8382">
       <ObjectId>16410</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>conference_id</ColNames>
@@ -1017,76 +1075,89 @@ true posixrules
       <RefKeyName>conference_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="43" parent="30" name="id">
+    <column id="52" parent="32" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="44" parent="30" name="city">
+    <column id="53" parent="32" name="city">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="45" parent="30" name="year">
+    <column id="54" parent="32" name="year">
       <Position>3</Position>
       <DataType>varchar(4)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="46" parent="30" name="is_international">
+    <column id="55" parent="32" name="is_international">
       <Position>4</Position>
       <DataType>boolean|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>571</StateNumber>
       <TypeId>16</TypeId>
     </column>
-    <index id="47" parent="30" name="conference_pkey">
+    <column id="56" parent="32" name="slug">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>585</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="57" parent="32" name="conference_pkey">
       <ObjectId>16408</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="48" parent="30" name="conference_pkey">
+    <index id="58" parent="32" name="uniq_911533c8989d9b62">
+      <ObjectId>16421</ObjectId>
+      <StateNumber>586</StateNumber>
+      <ColNames>slug</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="59" parent="32" name="conference_pkey">
       <ObjectId>16409</ObjectId>
       <StateNumber>571</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>conference_pkey</UnderlyingIndexName>
     </key>
-    <column id="49" parent="31" name="version">
+    <column id="60" parent="33" name="version">
       <Position>1</Position>
       <DataType>varchar(191)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>570</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="50" parent="31" name="executed_at">
+    <column id="61" parent="33" name="executed_at">
       <Position>2</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>570</StateNumber>
       <DefaultExpression>NULL::timestamp without time zone</DefaultExpression>
       <TypeId>1114</TypeId>
     </column>
-    <column id="51" parent="31" name="execution_time">
+    <column id="62" parent="33" name="execution_time">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>570</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="52" parent="31" name="doctrine_migration_versions_pkey">
+    <index id="63" parent="33" name="doctrine_migration_versions_pkey">
       <ObjectId>16389</ObjectId>
       <StateNumber>570</StateNumber>
       <ColNames>version</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="53" parent="31" name="doctrine_migration_versions_pkey">
+    <key id="64" parent="33" name="doctrine_migration_versions_pkey">
       <ObjectId>16390</ObjectId>
       <StateNumber>570</StateNumber>
       <ColNames>version</ColNames>
