@@ -14,7 +14,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Workflow\Registry;
 use Twig\Environment;
 
-class AdminController
+class AdminController extends AbstractController
 {
 
     private $twig;
