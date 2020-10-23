@@ -20,17 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a33f331-7270-4ebf-885a-13f1162d9a3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/dama_doctrine_test_bundle.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.test" beforeDir="false" afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Message/CommentMessage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/guestbook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/guestbook.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/easy_admin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/easy_admin.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ConferenceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ConferenceController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Controller/ConferenceControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/ConferenceControllerTest.php" afterDir="false" />
     </list>
@@ -148,6 +149,7 @@
       <path value="$PROJECT_DIR$/vendor/php-webdriver/webdriver" />
       <path value="$PROJECT_DIR$/vendor/symfony/panther" />
       <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/messenger" />
     </include_path>
   </component>
   <component name="ProjectId" id="1j5LYoqxdxUysEraTKQydbTJ6CS" />
@@ -203,7 +205,7 @@
       <workItem from="1603356157282" duration="4613000" />
       <workItem from="1603360803309" duration="11000" />
       <workItem from="1603432769701" duration="5231000" />
-      <workItem from="1603438012083" duration="485000" />
+      <workItem from="1603438012083" duration="5096000" />
     </task>
     <servers />
   </component>
@@ -239,10 +241,10 @@
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
     <state x="625" y="221" width="732" height="644" key="#Inspections/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603098341238" />
-    <state x="246" y="386" width="1490" height="315" key="#SQL_Dialects" timestamp="1603272202736">
+    <state x="246" y="386" width="1490" height="315" key="#SQL_Dialects" timestamp="1603440171867">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
-    <state x="246" y="386" width="1490" height="315" key="#SQL_Dialects/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603272202736" />
+    <state x="246" y="386" width="1490" height="315" key="#SQL_Dialects/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603440171867" />
     <state x="506" y="140" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603263874051">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
@@ -255,10 +257,10 @@
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
     <state x="779" y="298" width="416" height="498" key="FileChooserDialogImpl/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603269227652" />
-    <state x="708" y="239" width="566" height="608" key="NewPhpClassDialog" timestamp="1603434862710">
+    <state x="708" y="239" width="566" height="608" key="NewPhpClassDialog" timestamp="1603442219816">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
-    <state x="708" y="239" width="566" height="608" key="NewPhpClassDialog/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603434862710" />
+    <state x="708" y="239" width="566" height="608" key="NewPhpClassDialog/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603442219816" />
     <state x="768" y="453" width="446" height="181" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603099484670">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
@@ -267,9 +269,9 @@
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
     <state x="675" y="106" width="799" height="867" key="find.popup/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603269234055" />
-    <state x="659" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1603359515259">
+    <state x="659" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1603440619257">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
-    <state x="659" y="239" width="672" height="678" key="search.everywhere.popup/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603359515259" />
+    <state x="659" y="239" width="672" height="678" key="search.everywhere.popup/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603440619257" />
   </component>
 </project>
