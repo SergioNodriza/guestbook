@@ -74,11 +74,13 @@ class ConferenceController extends AbstractController
                 'user_ip' => $request->getClientIp(),
                 'user_agent' => $request->headers->get('user_agent'),
                 'referrer' => $request->headers->get('referrer'),
+                'permalink' => $request->getUri(),
             ];
             $this->bus->dispatch(new CommentMessage($comment->getId(), $context));
 
             return $this->redirectToRoute('conference', ['slug' => $conference->getSlug()]);
         }
+
 
         $offset = max(0, $request->query->getInt('offset', 0));
         $paginator = $commentRepository->getCommentPaginator($conference, $offset);

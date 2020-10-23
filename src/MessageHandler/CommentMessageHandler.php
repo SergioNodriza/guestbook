@@ -9,7 +9,7 @@ use App\SpamChecker;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
 
-class CommentMessageHandler
+class CommentMessageHandler implements MessageHandlerInterface
 {
 
     private $spamChecker;
@@ -25,7 +25,7 @@ class CommentMessageHandler
 
     public function __invoke(CommentMessage $message)
     {
-        $comment = $this->commentRepository->find($message->getContext());
+        $comment = $this->commentRepository->find($message->getId());
         if (!$comment) {
             return;
         }
