@@ -20,18 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a33f331-7270-4ebf-885a-13f1162d9a3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/conference/header.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/MailerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/StepInfoCommand.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/messenger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/messenger.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/data.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ConferenceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ConferenceController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventSubscriber/TwigEventSubscriber.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,10 +265,10 @@
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
     <state x="779" y="298" width="416" height="505" key="FileChooserDialogImpl/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603445484653" />
-    <state x="708" y="239" width="566" height="608" key="NewPhpClassDialog" timestamp="1603700474112">
+    <state x="708" y="239" width="566" height="608" key="NewPhpClassDialog" timestamp="1603708881799">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
-    <state x="708" y="239" width="566" height="608" key="NewPhpClassDialog/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603700474112" />
+    <state x="708" y="239" width="566" height="608" key="NewPhpClassDialog/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603708881799" />
     <state x="768" y="453" width="446" height="181" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603099484670">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
