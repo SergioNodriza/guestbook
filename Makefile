@@ -8,8 +8,6 @@ tests:
 on:
 	docker-compose up -d
 	symfony server:start -d
-	symfony run -d yarn encore dev --watch
-	symfony run -d symfony console messenger:consume async
 	symfony open:local
 .PHONY: on
 
@@ -19,6 +17,13 @@ off:
 .PHONY: off
 
 status:
+	symfony server:status
 	docker ps
 	symfony server:log
 .PHONY: status
+
+demons:
+	symfony run -d yarn encore dev --watch
+	symfony run -d --watch=config,src,templates,vendor symfony console messenger:consume async
+	symfony server:status
+.PHONY: demons
