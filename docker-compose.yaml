@@ -9,6 +9,8 @@ services:
       POSTGRES_DB: main
     ports:
       - "5432:5432"
+    volumes:
+      - .docker/psql:/usr/local/pgsql/data
   redis:
     image: redis:5-alpine
     ports:

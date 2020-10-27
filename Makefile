@@ -24,6 +24,15 @@ status:
 
 demons:
 	symfony run -d yarn encore dev --watch
-	symfony run -d --watch=config,src,templates,vendor symfony console messenger:consume async
+	symfony run -d symfony console messenger:consume async
 	symfony server:status
 .PHONY: demons
+
+
+.PHONY: dbdump
+dbdump:
+	docker exec guestbook_database_1 pg_dump -Umain main > ./etc/data/$$(date '+%s').sql
+
+.PHONY: dbimport
+dbimport:
+	docker exec -i guestbook_database_1 psql -Umain -dmain < $(file)
