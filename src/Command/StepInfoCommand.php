@@ -29,7 +29,7 @@ class StepInfoCommand extends Command
             return $process->getOutput();
         });
 
-        $output->writeln($step);
+        $output->write($step);
         return 0;
     }
 }
