@@ -931,11 +931,13 @@ true posixrules
     </sequence>
     <table id="30" parent="15" name="admin">
       <ObjectId>16430</ObjectId>
+      <Outdated>1</Outdated>
       <Owner>main</Owner>
       <StateNumber>607</StateNumber>
     </table>
     <table id="31" parent="15" name="comment">
       <ObjectId>16436</ObjectId>
+      <Outdated>1</Outdated>
       <Owner>main</Owner>
       <StateNumber>632</StateNumber>
     </table>

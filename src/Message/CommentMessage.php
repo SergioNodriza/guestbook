@@ -8,12 +8,19 @@ class CommentMessage
 {
 
     private $id;
+    private $reviewUrl;
     private $context;
 
-    public function __construct(int $id, array $context = [])
+    public function __construct(int $id, string $reviewUrl, array $context = [])
     {
         $this->id = $id;
+        $this->reviewUrl = $reviewUrl;
         $this->context = $context;
+    }
+
+    public function getReviewerUrl(): string
+    {
+        return $this->reviewUrl;
     }
 
     public function getId(): int

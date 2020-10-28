@@ -22,7 +22,7 @@ status:
 	symfony server:log
 .PHONY: status
 
-demons:
+daemons:
 	symfony run -d yarn encore dev --watch
 	symfony run -d symfony console messenger:consume async
 	symfony server:status

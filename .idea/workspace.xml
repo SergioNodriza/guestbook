@@ -20,8 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a33f331-7270-4ebf-885a-13f1162d9a3a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Notification/CommentReviewNotification.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cc4e192d-0954-4645-8eec-b09bf0731a48.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cc4e192d-0954-4645-8eec-b09bf0731a48.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/guestbook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/guestbook.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/CommentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/CommentRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/messenger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/messenger.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/secrets/dev/dev.list.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/secrets/dev/dev.list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ConferenceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ConferenceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Message/CommentMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Message/CommentMessage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MessageHandler/CommentMessageHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MessageHandler/CommentMessageHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/conference/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conference/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,6 +165,8 @@
       <path value="$PROJECT_DIR$/vendor/twig/cssinliner-extra" />
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
       <path value="$PROJECT_DIR$/vendor/imagine/imagine" />
+      <path value="$PROJECT_DIR$/vendor/symfony/notifier" />
+      <path value="$PROJECT_DIR$/vendor/symfony/slack-notifier" />
     </include_path>
   </component>
   <component name="ProjectId" id="1j5LYoqxdxUysEraTKQydbTJ6CS" />
@@ -161,15 +180,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../libroCompleto" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/migrations" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/js" />
       <recent name="$PROJECT_DIR$/public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/migrations" />
     </key>
   </component>
   <component name="RunManager">
@@ -254,6 +275,10 @@
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
     <state x="506" y="140" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603263874051" />
+    <state x="778" y="211" width="426" height="664" key="#com.intellij.ide.util.MemberChooser" timestamp="1603871358837">
+      <screen x="72" y="0" width="1848" height="1080" />
+    </state>
+    <state x="778" y="211" width="426" height="664" key="#com.intellij.ide.util.MemberChooser/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603871358837" />
     <state x="579" y="81" width="814" height="932" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603267374743">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
@@ -262,14 +287,14 @@
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
     <state x="729" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603700508257" />
-    <state x="779" y="298" width="416" height="519" key="FileChooserDialogImpl" timestamp="1603785654026">
+    <state x="779" y="298" width="416" height="519" key="FileChooserDialogImpl" timestamp="1603870675705">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
-    <state x="779" y="298" width="416" height="519" key="FileChooserDialogImpl/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603785654026" />
-    <state x="708" y="239" width="566" height="608" key="NewPhpClassDialog" timestamp="1603791873365">
+    <state x="779" y="298" width="416" height="519" key="FileChooserDialogImpl/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603870675705" />
+    <state x="708" y="239" width="566" height="608" key="NewPhpClassDialog" timestamp="1603871234636">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
-    <state x="708" y="239" width="566" height="608" key="NewPhpClassDialog/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603791873365" />
+    <state x="708" y="239" width="566" height="608" key="NewPhpClassDialog/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603871234636" />
     <state x="768" y="453" width="446" height="181" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603099484670">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
@@ -278,9 +303,9 @@
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
     <state x="676" y="106" width="799" height="867" key="find.popup/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603452399472" />
-    <state x="659" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1603791036678">
+    <state x="659" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1603876126393">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
-    <state x="659" y="239" width="672" height="678" key="search.everywhere.popup/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603791036678" />
+    <state x="659" y="239" width="672" height="678" key="search.everywhere.popup/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603876126393" />
   </component>
 </project>
