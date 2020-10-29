@@ -20,17 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a33f331-7270-4ebf-885a-13f1162d9a3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Api/FilterPublishedCommentQueryExtension.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/guestbook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/guestbook.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spa/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spa/src/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spa/src/index.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spa/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Conference.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Conference.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,12 +184,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/js" />
-      <recent name="$PROJECT_DIR$/public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/migrations" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spa" />
+      <recent name="$PROJECT_DIR$/assets/js" />
+      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="RunManager">
@@ -237,7 +232,8 @@
       <workItem from="1603447128017" duration="1372000" />
       <workItem from="1603695553439" duration="1842000" />
       <workItem from="1603781938029" duration="10592000" />
-      <workItem from="1603954724404" duration="8286000" />
+      <workItem from="1603954724404" duration="9933000" />
+      <workItem from="1603965155412" duration="1970000" />
     </task>
     <servers />
   </component>
@@ -293,10 +289,10 @@
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
     <state x="729" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603700508257" />
-    <state x="779" y="298" width="416" height="519" key="FileChooserDialogImpl" timestamp="1603870675705">
+    <state x="779" y="298" width="416" height="519" key="FileChooserDialogImpl" timestamp="1603964604739">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
-    <state x="779" y="298" width="416" height="519" key="FileChooserDialogImpl/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603870675705" />
+    <state x="779" y="298" width="416" height="519" key="FileChooserDialogImpl/0.1080.1920.1080/72.0.1848.1080@72.0.1848.1080" timestamp="1603964604739" />
     <state x="708" y="239" width="566" height="608" key="NewPhpClassDialog" timestamp="1603963102516">
       <screen x="72" y="0" width="1848" height="1080" />
     </state>
