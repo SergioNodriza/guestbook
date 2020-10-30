@@ -943,6 +943,7 @@ true posixrules
     </table>
     <table id="32" parent="15" name="conference">
       <ObjectId>16443</ObjectId>
+      <Outdated>1</Outdated>
       <Owner>main</Owner>
       <StateNumber>632</StateNumber>
     </table>

@@ -19,6 +19,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  *     order={"createdAt"="DESC"},
  *     paginationEnabled=false
  * )
+ * @ApiFilter(SearchFilter::class, properties={"conference": "exact"})
  */
 class Comment
 {
