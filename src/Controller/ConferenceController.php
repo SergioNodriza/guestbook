@@ -34,7 +34,15 @@ class ConferenceController extends AbstractController
     }
 
     /**
-     * @Route("/", name="homepage")
+     * @Route("/")
+     */
+    public function indexNoLocale()
+    {
+        return $this->redirectToRoute('homepage', ['_locale' => 'es']);
+    }
+
+    /**
+     * @Route("/{_locale}/", name="homepage", requirements={"_locale"="%app.supported_locales%"})
      * @param ConferenceRepository $conferenceRepository
      * @return Response
      */
@@ -43,12 +51,12 @@ class ConferenceController extends AbstractController
         $response = new Response($this->twig->render('conference/index.html.twig', [
             'conferences' => $conferenceRepository->findAll(),
         ]));
-        $response->setSharedMaxAge(3600);
+        $response->setSharedMaxAge(100);
         return $response;
     }
 
     /**
-     * @Route("/conference_header", name="conference_header")
+     * @Route("/{_locale<%app.supported_locales%>}/conference_header", name="conference_header")
      * @param ConferenceRepository $conferenceRepository
      * @return Response
      */
@@ -58,12 +66,12 @@ class ConferenceController extends AbstractController
             'conferences' => $conferenceRepository->findAll(),
         ]));
 
-        $response->setSharedMaxAge(3600);
+        $response->setSharedMaxAge(100);
         return $response;
     }
 
     /**
-     * @Route("/conference/{slug}", name="conference")
+     * @Route("/{_locale<%app.supported_locales%>}/conference/{slug}", name="conference")
      * @param Request $request
      * @param Conference $conference
      * @param CommentRepository $commentRepository
